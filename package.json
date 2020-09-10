@@ -1,7 +1,7 @@
 {
   "name": "budger-cloud",
   "version": "0.1.0",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "repository": "git@github.com:itscharlieliu/budger-cloud.git",
   "author": "Charlie <itscharlieliu@gmail.com>",
   "license": "MIT",
@@ -24,11 +24,11 @@
     "typescript": "^4.0.2"
   },
   "scripts": {
-    "start": "nodemon index.ts",
+    "start": "nodemon src/index.ts",
     "build": "tsc --project ./",
-    "pretty": "prettier --check \"./*.{ts,tsx}\"",
-    "pretty-fix": "prettier --write \"./*.{ts,tsx}\"",
-    "lint": "eslint -c .eslintrc.js './*.{ts,tsx}'",
-    "lint-fix": "eslint --fix -c .eslintrc.js './*.{ts,tsx}'"
+    "pretty": "prettier --check \"src/**/*.{ts,tsx}\"",
+    "pretty-fix": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "lint": "eslint -c .eslintrc.js 'src/**/*.{ts,tsx}'",
+    "lint-fix": "eslint --fix -c .eslintrc.js 'src/**/*.{ts,tsx}'"
   }
 }
