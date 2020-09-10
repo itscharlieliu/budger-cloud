@@ -9,6 +9,9 @@ const PORT = 2020;
 const MongoClient = mongodb.MongoClient;
 const client = new MongoClient(uri, { useNewUrlParser: true });
 client.connect((err) => {
+    if (err) {
+        console.log(err);
+    }
     const collection = client.db("test").collection("devices");
     // perform actions on the collection object
     console.log("connected to database");
